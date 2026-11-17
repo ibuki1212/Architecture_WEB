@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 木の家工務店</title>
+  <meta name="description" content="木の家工務店へのお問い合わせ先・経理窓口・提携企業のご案内。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading page-sub">
 
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__house" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path class="draw" d="M8 40 L40 12 L72 40"/>
+        <path class="draw" d="M16 36 V68 H64 V36"/>
+        <path class="draw" d="M32 68 V48 H48 V68"/>
+        <path class="draw" d="M54 22 V14 H62 V28"/>
+      </svg>
+      <p class="loader__name">木の家工務店</p>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+      <p class="loader__count"><span id="loaderNum">0</span>%</p>
+    </div>
+    <div class="loader__panel loader__panel--l"></div>
+    <div class="loader__panel loader__panel--r"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="index.html" class="logo" aria-label="木の家工務店 トップへ">
+      <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 40 L40 12 L72 40"/><path d="M16 36 V68 H64 V36"/><path d="M32 68 V48 H48 V68"/><path d="M54 22 V14 H62 V28"/>
+      </svg>
+      <span>木の家工務店</span>
+    </a>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html#concept">家づくり</a></li>
+        <li><a href="index.html#works">施工事例</a></li>
+        <li><a href="index.html#company">会社案内</a></li>
+        <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="page-hero__en fade-up" style="--d:.9s">CONTACT</p>
+      <h1 class="page-hero__title">
+        <span class="line" data-split>お問い合わせ</span>
+      </h1>
+      <p class="page-hero__lead fade-up" style="--d:1.4s">家づくりのご相談・お見積りなど、お気軽にご連絡ください。</p>
+      <svg class="deco deco--l" viewBox="0 0 120 160" aria-hidden="true"><g fill="#7aa35a"><path d="M10 150 C30 110 40 70 70 20" stroke="#6c944d" stroke-width="2" fill="none"/><ellipse cx="44" cy="96" rx="16" ry="8" transform="rotate(-40 44 96)"/><ellipse cx="62" cy="62" rx="15" ry="7" transform="rotate(-55 62 62)"/><ellipse cx="26" cy="124" rx="15" ry="7" transform="rotate(-20 26 124)"/></g></svg>
+      <svg class="deco deco--r" viewBox="0 0 120 160" aria-hidden="true"><g fill="#8fb36a"><path d="M110 150 C90 110 80 70 50 20" stroke="#6c944d" stroke-width="2" fill="none"/><ellipse cx="76" cy="96" rx="16" ry="8" transform="rotate(40 76 96)"/><ellipse cx="58" cy="62" rx="15" ry="7" transform="rotate(55 58 62)"/><ellipse cx="94" cy="124" rx="15" ry="7" transform="rotate(20 94 124)"/></g></svg>
+    </section>
+
+    <!-- 連絡先 -->
+    <section class="contact">
+      <div class="contact__grid">
+        <article class="ccard reveal" style="--i:0">
+          <div class="ccard__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#8a5a33" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 L24 8 L42 24"/><path d="M11 21 V40 H37 V21"/><path d="M19 40 V29 H29 V40"/></svg>
+          </div>
+          <h2>代表窓口</h2>
+          <p class="ccard__note">家づくりのご相談・お見積り・施工に関するお問い合わせ</p>
+          <dl>
+            <div>
+              <dt>電話</dt>
+              <dd><a href="tel:0000000000" class="tel">00-0000-0000</a><small>受付 9:00〜18:00（水曜定休）</small></dd>
+            </div>
+            <div>
+              <dt>メール</dt>
+              <dd><a href="mailto:info@example.com">info@example.com</a><small>2営業日以内にご返信します</small></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="ccard ccard--green reveal" style="--i:1">
+          <div class="ccard__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#4f7d3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="6" width="30" height="36" rx="3"/><path d="M16 14h16"/><path d="M16 22h4M24 22h4M16 29h4M24 29h4M16 36h4M24 36h4"/></svg>
+          </div>
+          <h2>経理窓口</h2>
+          <p class="ccard__note">請求書・お支払い・領収書に関するお問い合わせ</p>
+          <dl>
+            <div>
+              <dt>電話</dt>
+              <dd><a href="tel:0000000001" class="tel">00-0000-0001</a><small>受付 9:00〜17:00（土日祝休）</small></dd>
+            </div>
+            <div>
+              <dt>メール</dt>
+              <dd><a href="mailto:keiri@example.com">keiri@example.com</a><small>2営業日以内にご返信します</small></dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- 提携企業 -->
+    <section class="partners">
+      <div class="partners__head reveal">
+        <h2>提携企業</h2>
+        <p>確かな品質を支える、信頼のパートナーです</p>
+      </div>
+      <ul class="partners__list">
+        <li class="partner reveal" style="--i:0"><span class="partner__tag">木材</span><strong>○○製材所</strong><small>国産材の調達・加工</small></li>
+        <li class="partner reveal" style="--i:1"><span class="partner__tag">建材</span><strong>△△建材株式会社</strong><small>断熱材・自然素材の供給</small></li>
+        <li class="partner reveal" style="--i:2"><span class="partner__tag">設備</span><strong>□□設備工業</strong><small>給排水・電気設備工事</small></li>
+        <li class="partner reveal" style="--i:3"><span class="partner__tag">設計</span><strong>◇◇設計事務所</strong><small>構造・意匠設計の協力</small></li>
+        <li class="partner reveal" style="--i:4"><span class="partner__tag">金融</span><strong>☆☆信用金庫</strong><small>住宅ローンのご案内</small></li>
+        <li class="partner reveal" style="--i:5"><span class="partner__tag">造園</span><strong>◎◎造園</strong><small>外構・庭づくり</small></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" id="company">
+    <p class="footer__logo">木の家工務店</p>
+    <p class="footer__sub"><a href="index.html" class="footer__link">トップページへ戻る</a></p>
+    <small>&copy; <span id="year">2026</span> Ki-no-Ie Koumuten</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
